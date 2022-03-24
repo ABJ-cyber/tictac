@@ -1,0 +1,367 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    box-shadow: 0;
+    border: 0;
+    font-family: Outfit, sans-serif
+}
+
+.new-game-page{
+    background: #192A32;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+.new-game-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+
+}
+
+.pick-container{
+    background: #1F3540;
+    border-radius: 7px;
+    height: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.pick-container > p{
+    color: #A8BFC9;
+    font-weight: bold;
+}
+
+.icons{
+    margin: 10px ;
+    background: #192A32;
+    display: flex;
+    width: 293px;
+    height: 55px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+i{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+
+.btn-o, .btn-x{
+    width: 50%;
+    background: #192A32;
+    color: #A8BFC9;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+.btn-active{
+    border-radius: 7px;
+    background: #A8BFC9;
+    color: #192A32;
+
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top > i{
+    font-weight: 10000;
+    margin-bottom: 30px;
+}
+
+.x-icon{
+    color: #65E9E4;
+}
+
+.o-icon{
+    color: orange;
+}
+
+.new-btn-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cpu-btn{
+    background: #FFC880;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 7px;
+    height: 67px;
+    cursor: pointer;
+    box-shadow: rgb(204, 139, 19) 0px -8px 0px 0px inset;
+}
+
+.cpu-btn:hover{
+    opacity: 50%;
+}
+
+.player-btn{
+    background: #65E9E4;
+    border-radius: 7px;
+    height: 67px;
+    cursor: pointer;
+    box-shadow: rgb(17, 140, 135) 0px -8px 0px 0px inset
+}
+
+.player-btn:hover{
+    opacity: 50%;
+}
+
+.game-page{
+    background: #192A32;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-page-main{
+    width:460px;
+    height: 623px;
+
+
+}
+
+.game-page-top{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 52px;
+    margin-bottom: 10px;
+    width: 440px;
+    
+}
+
+.turn-btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background: #1F3641;
+    color: #A8BFC9;
+    height: 40px;
+    box-shadow:  rgb(16, 33, 42) 0px -4px 0px 0px inset;
+    border-radius: 5px;
+    padding: 13px 30px 19px 30px;
+    display: flex;
+    font-size: 15px;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.game-cell{
+    position: relative;
+    background: #1F3641;
+    width: 140px;
+    height: 140px;
+    border-radius: 15px;
+    box-shadow: rgb(16, 33, 42) 0px -8px 0px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-cell-active-x::after, .game-cell-active-x::before{
+    content: "";
+    width: 10px;
+    height: 80%;
+    position: absolute;
+    background: red;
+    
+
+}
+
+.game-cell-active-x::before{
+    transform: rotate(45deg);
+}
+
+.game-cell-active-x::after{
+    transform: rotate(-45deg);
+}
+
+
+.game-cell-active-o::after{
+    content: "";
+    width: 50%;
+    height: 50%;
+    background: red;
+    border-radius: 50%;
+}
+
+.game-cell-active-o::before{
+    content: "";
+    width: 25%;
+    height: 25%;
+    background:#1F3641;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+
+
+.bottom{
+    display: flex; 
+}
+
+
+.you{
+    background: #31C3BD;
+    border-radius: 10px;
+    height: 72px;
+    width: 140px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ties{
+    border-radius: 10px;
+    height: 72px;
+    width: 140px;
+    margin-left: 15px;
+    background: #A8BFC9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cpu{
+    border-radius: 10px;
+    height: 72px;
+    width: 140px;
+    margin-right: 15px;
+    margin-left: auto;
+    background: #F2B137;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.game-page-top>button>i{
+    font-size: 16px;
+    margin-right: 10px;
+    
+}
+
+.refresh-btn{
+    width: 40px;
+    box-shadow: rgb(107, 137, 151) 0px -4px 0px 0px inset;
+    border-radius: 10px;
+    background-color: #A8BFC9;
+}
+
+
+
+.x-win-page{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    font-family: outfit, sans-serif;
+    font-size: 16px;
+}
+
+.x-win-banner{
+    background: hsl(199, 35%, 19%, 50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 305px;
+    z-index: 20;
+}
+
+.takes{
+    display: flex;
+    color: #F2B137;
+    font-weight: 700;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+
+.takes>h1{
+    margin-left: 20px;
+}
+
+.takes>i{
+    font-size: 80px;
+}
+
+.x-win-banner>p{
+    color:  #A8BFC9;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.quit-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background:  #DBE8ED;
+    color: black;
+    height: 52px;
+    width: 76px;
+    padding: 1px 6px 1px 6px;
+    margin-right: 16px;
+    box-shadow:  rgb(107, 137, 151) 0px -8px 0px 0px inset;
+    border-radius: 15px;
+}
+
+.next-rnd-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background:  #FFC880;
+    color: black;
+    height: 52px;
+    width: 146px;
+    padding: 1px 6px 1px 6px;
+    margin-right: 16px;
+    box-shadow:  rgb(107, 137, 151) 0px -8px 0px 0px inset;
+    border-radius: 15px;
+}
+
+
+.passive{
+    display: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e74ec773cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/0a195ba181.css">
+</head>
+<body>
+    <div class="new-game-page">
+        <div class="new-game-container">
+            <div class="top">
+                <i class="fa-solid fa-x x-icon"></i>
+                <i class="fa-solid fa-o o-icon"></i>
+            </div>
+            
+            <div class="pick-container">
+                <p>PICK PLAYER 1's MARK</p>
+
+                <div class="icons">
+                    <button class="btn-x btn-active">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                    <button class="btn-o">
+                        <i class="fa-solid fa-o"></i>
+                    </button>
+                </div>
+                <p>REMEMBER: X GOES FIRST</p>
+            </div>
+            
+            <div class="new-btn-container">
+                <button class="cpu-btn">NEW GAME(VS CPU)</button>
+                <button class="player-btn">NEW GAME(VS PLAYER)</button>
+
+            </div>
+            
+        </div>
+ 
+    </div>
+
+
+    <div class="game-page passive">
+        <div class="game-page-main">
+            <div class="game-page-top">
+                <i class="fa-solid fa-x x-icon"></i>
+                <i class="fa-solid fa-o o-icon"></i>
+                <button class="turn-btn">
+                    <i class="fa-solid fa-x"></i>
+                    <p>TURN</p>
+                </button>
+    
+                <button class="refresh-btn">
+                    <img src="rotate-right-solid.svg">
+                </button>
+            </div>
+    
+            <div class="main-grid">
+                <div class="game-cell game-cell-1"></div>
+                <div class="game-cell game-cell-2"></div>
+                <div class="game-cell game-cell-3"></div>
+                <div class="game-cell game-cell-4"></div>
+                <div class="game-cell game-cell-5"></div>
+                <div class="game-cell game-cell-6"></div>
+                <div class="game-cell game-cell-7"></div>
+                <div class="game-cell game-cell-8"></div>
+                <div class="game-cell game-cell-9"></div>
+            </div>
+    
+            <div class="bottom">
+                <div class="you">
+                    <p>X(YOU)</p>
+                    <h1 id = 'you-wins'>0</h1>
+                </div>
+                <div class="ties">
+                    <p>Ties</p>
+                    <h1 id = 'ties'>0</h1>
+                </div>
+                <div class="cpu">
+                    <p>O(CPU)</p>
+                    <h1 id = 'cpu-wins'>0</h1>
+                </div>
+            </div>
+
+        </div> 
+
+        <div class="x-win-page passive">
+            <div class="x-win-banner">
+                <p>PLAYER 1 WINS!</p>
+                <div class="takes">
+                    <i class="fa-solid fa-o o-icon"></i>
+                    <h1 class="winner"></h1>
+                </div>
+
+                <div class="takes-btns">
+                    <button class="quit-btn">QUIT</button>
+                    <button class="next-rnd-btn">NEXT ROUND</button>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
