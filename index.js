@@ -7,7 +7,7 @@ btnO = document.querySelector('.btn-o')
 xWinPage = document.querySelector('.x-win-page')
 oWinPage = document.querySelector('.o-win-page')
 nextRndBtn = document.querySelector('.next-rnd-btn')
-quitBtn = document.querySelector('.qui-btn')
+quitBtn = document.querySelector('.quit-btn')
 
 
 youWins = document.getElementById('you-wins')

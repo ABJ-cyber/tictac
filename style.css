@@ -345,6 +345,7 @@ i{
     margin-right: 16px;
     box-shadow:  rgb(107, 137, 151) 0px -8px 0px 0px inset;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .next-rnd-btn{
