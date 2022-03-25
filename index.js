@@ -7,6 +7,7 @@ btnO = document.querySelector('.btn-o')
 xWinPage = document.querySelector('.x-win-page')
 oWinPage = document.querySelector('.o-win-page')
 nextRndBtn = document.querySelector('.next-rnd-btn')
+quitBtn = document.querySelector('.qui-btn')
 
 
 youWins = document.getElementById('you-wins')
@@ -28,6 +29,7 @@ cell9 = document.querySelector('.game-cell-9')
 //event-listeners
 newGameBtn.addEventListener('click', newGame)
 nextRndBtn.addEventListener('click',newGame)
+quitBtn.addEventListener('click', quit)
 btnX.addEventListener('click', pick)
 btnO.addEventListener('click', pick)
 cell1.addEventListener('click', addX)
@@ -268,4 +270,11 @@ function tie(){
     xWinPage.classList.remove('passive')
     tieCount+=1
     ties.textContent = tieCount
+}
+
+
+function quit(){
+    newGamePage.classList.remove('passive')
+    gamePage.classList.add('passive')
+    xWinPage.classList.add('passive')
 }
